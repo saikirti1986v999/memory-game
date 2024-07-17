@@ -16,11 +16,11 @@ body {
   padding: 2.5em 3em;
   background-color: #ffffff;
   position: absolute;
-  transform: translate(-50%, -50%) scale(0.8);
   left: 50%;
   top: 50%;
   border-radius: 0.6em;
   box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+  transform: translate(-50%, -50%) scale(1.0);
 }
 
 .game-container {
@@ -129,13 +129,8 @@ button {
   margin: 0.6em 0 1em 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .wrapper {
-    width: 100%;
-    padding: 1.5em;
-  }
-
-  .card-before, .card-after {
-    font-size: 1.5em;
+    transform: translate(-50%, -50%) scale(0.8);
   }
 }
